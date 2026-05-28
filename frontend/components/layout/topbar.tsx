@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { Moon, Sun, Activity, CircuitBoard } from "lucide-react";
+import { Moon, Sun, Activity } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { api } from "@/lib/api";
@@ -40,9 +41,13 @@ export function Topbar() {
     <header className="sticky top-0 z-30 flex h-16 items-center justify-between gap-4 border-b bg-background/80 px-6 backdrop-blur">
       <div className="flex items-center gap-3">
         <Link href="/" className="lg:hidden">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-indigo-500 text-primary-foreground shadow">
-            <CircuitBoard className="h-4 w-4" />
-          </div>
+          <Image
+            src="/logo.png"
+            alt="Forge Agent"
+            width={36}
+            height={36}
+            className="h-9 w-9 rounded-lg shadow-sm ring-1 ring-border"
+          />
         </Link>
         <div className="hidden text-xs text-muted-foreground sm:flex sm:items-center sm:gap-1.5">
           <Activity className="h-3.5 w-3.5" />

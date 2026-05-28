@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { Sparkles, Wand2 } from "lucide-react";
+import { Loader2, Play } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -149,12 +149,12 @@ export default function NewWorkflowPage() {
               <Button onClick={() => submit(true)} disabled={submitting}>
                 {planning ? (
                   <>
-                    <Sparkles className="h-4 w-4 animate-pulse" />
+                    <Loader2 className="h-4 w-4 animate-spin" />
                     Planning…
                   </>
                 ) : (
                   <>
-                    <Wand2 className="h-4 w-4" />
+                    <Play className="h-4 w-4" />
                     Create & plan
                   </>
                 )}

@@ -8,7 +8,6 @@ import {
   Clock,
   ListChecks,
   PlusCircle,
-  Sparkles,
   Workflow as WorkflowIcon,
   XCircle,
 } from "lucide-react";
@@ -50,11 +49,11 @@ export default function DashboardPage() {
         <div className="relative grid gap-6 lg:grid-cols-[1.4fr_1fr] lg:items-center">
           <div className="space-y-4">
             <span className="inline-flex items-center gap-2 rounded-full border bg-background px-3 py-1 text-xs font-medium shadow-sm">
-              <Sparkles className="h-3.5 w-3.5 text-primary" />
+              <CheckCircle2 className="h-3.5 w-3.5 text-primary" />
               Plan → Approve → Execute
             </span>
             <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">
-              Production-grade <span className="gradient-text">AI agent runtime</span>
+              A typed <span className="gradient-text">agent runtime</span>
               <br className="hidden md:block" />
               for safe, auditable workflows.
             </h1>
@@ -179,7 +178,7 @@ export default function DashboardPage() {
               </div>
             ) : recent.length === 0 ? (
               <EmptyState
-                icon={Sparkles}
+                icon={WorkflowIcon}
                 title="No workflows yet"
                 description="Create your first workflow to see the planner in action — runs offline in mock mode by default."
                 action={

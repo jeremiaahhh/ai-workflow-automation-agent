@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { PlusCircle, Sparkles } from "lucide-react";
+import { ListChecks, PlusCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { EmptyState } from "@/components/empty-state";
@@ -57,7 +57,7 @@ export default function WorkflowsPage() {
             </div>
           ) : workflows.length === 0 ? (
             <EmptyState
-              icon={Sparkles}
+              icon={ListChecks}
               title="No workflows yet"
               description="Create your first one — the planner runs offline in mock mode by default."
               action={

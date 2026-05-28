@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
@@ -7,7 +8,6 @@ import {
   ListChecks,
   PlusCircle,
   Wrench,
-  Sparkles,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -22,14 +22,19 @@ export function Sidebar() {
   const pathname = usePathname();
   return (
     <aside className="sticky top-0 hidden h-screen w-64 shrink-0 border-r bg-card/50 backdrop-blur-sm lg:flex lg:flex-col">
-      <div className="flex h-16 items-center gap-2 border-b px-6">
-        <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-indigo-500 text-primary-foreground shadow-lg">
-          <Sparkles className="h-4 w-4" />
-        </div>
+      <div className="flex h-16 items-center gap-2.5 border-b px-5">
+        <Image
+          src="/logo.png"
+          alt="Forge Agent logo"
+          width={36}
+          height={36}
+          priority
+          className="h-9 w-9 rounded-lg shadow-sm ring-1 ring-border"
+        />
         <div className="leading-tight">
           <p className="text-sm font-semibold tracking-tight">Forge Agent</p>
           <p className="text-[11px] uppercase tracking-wider text-muted-foreground">
-            AI Workflow Studio
+            Workflow Studio
           </p>
         </div>
       </div>

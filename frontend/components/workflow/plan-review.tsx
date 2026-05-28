@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckCircle2, XCircle, Sparkles } from "lucide-react";
+import { CheckCircle2, ListOrdered, XCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import type { PlannedStep } from "@/lib/types";
@@ -26,7 +26,7 @@ export function PlanReview({
     <Card className="overflow-hidden">
       <div className="flex items-start gap-3 border-b bg-gradient-to-r from-primary/10 via-primary/5 to-transparent p-5">
         <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/15 text-primary">
-          <Sparkles className="h-5 w-5" />
+          <ListOrdered className="h-5 w-5" />
         </div>
         <div className="space-y-1">
           <p className="text-xs font-semibold uppercase tracking-wider text-primary">
