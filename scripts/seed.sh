@@ -35,7 +35,7 @@ print(json.dumps(data[int(sys.argv[2])]))
   payload=$(python3 -c "import json,sys; print(json.dumps(json.loads(sys.argv[1])['payload']))" "$entry")
   stage=$(python3 -c "import json,sys; print(json.loads(sys.argv[1])['stage'])" "$entry")
 
-  echo "  creating ‘$title’ (stage: $stage)"
+  echo "  creating \"$title\" (stage: $stage)"
   wf_id=$(curl -sf -X POST "$API_BASE/workflows" \
     -H "Content-Type: application/json" \
     -d "$payload" | python3 -c "import json,sys; print(json.load(sys.stdin)['id'])")
