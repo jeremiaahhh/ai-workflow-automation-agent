@@ -83,7 +83,7 @@ export function Topbar() {
                 health.mock ? "bg-amber-500" : "bg-emerald-500",
               )}
             />
-            {health.mock ? "Mock mode" : "Live AI"}
+            {health.mock ? "Mock mode" : "Live"}
           </span>
         )}
         <Button

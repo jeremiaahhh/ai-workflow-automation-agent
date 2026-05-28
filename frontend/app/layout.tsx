@@ -5,9 +5,9 @@ import { Shell } from "@/components/layout/shell";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Forge Agent — AI Workflow Studio",
+  title: "Forge Agent — Workflow Studio",
   description:
-    "Plan, review, and execute AI workflows with a typed tool registry and end-to-end audit trail.",
+    "Plan, review, and execute workflows with a typed tool registry and end-to-end audit trail.",
 };
 
 export default function RootLayout({

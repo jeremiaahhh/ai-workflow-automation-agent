@@ -1,6 +1,6 @@
-# Forge Agent — AI Workflow Automation Agent
+# Forge Agent — Tool-Registry Workflow Runtime
 
-A full-stack AI agent platform. Submit a goal, get a typed step-by-step plan,
+A agent platform. Submit a goal, get a typed step-by-step plan,
 approve it, and watch the agent execute through a fixed catalog of safe,
 registered tools. Each run produces a Markdown report with a full audit trail
 of arguments, outputs, and timings.
@@ -41,7 +41,7 @@ completed workflow.
 
 ## Why this project
 
-"Agentic AI" is easy to demo and hard to ship. The interesting work isn't
+"Agent runtimes" is easy to demo and hard to ship. The interesting work isn't
 making a model produce a plan — it's the contract around that plan: a closed
 tool registry the model can't escape, a status machine that prevents skipping
 review, a per-step audit trail you can hand to a reviewer, and a typed
@@ -60,7 +60,7 @@ This repo implements that contract end to end:
 - **Reporting** — a Markdown report is generated from the audit trail for
   every completed run, downloadable from the UI.
 
-Mock-AI mode is a deliberate design choice: the full product — planning,
+Mock mode is a deliberate design choice: the full product — planning,
 approvals, tool execution, reports — works without external dependencies, so
 the project clones cleanly and runs with a single command.
 
@@ -143,7 +143,7 @@ Then in the browser:
 
 1. **Dashboard** (http://localhost:3000) — KPI cards plus the three demo
    workflows in different states (`completed`, `planned`, `draft`).
-2. **Inspect the completed workflow** — *Research AI agent observability* →
+2. **Inspect the completed workflow** — *Research agent observability patterns* →
    the *Execution timeline* tab shows each step's tool name, status,
    duration, and output. *Report* renders the Markdown audit trail
    (downloadable).
@@ -155,7 +155,7 @@ Then in the browser:
 5. **Flip to a live model** *(optional)* — stop the backend, set
    `USE_MOCK_AI=false` and `OPENAI_API_KEY=…` (or `ANTHROPIC_API_KEY=…` +
    `AI_PROVIDER=anthropic`) in `backend/.env`, restart. The UI badge swaps
-   *Mock mode* to *Live AI* and plans come from the real model.
+   *Mock mode* to *Live* and plans come from the real model.
 
 ---
 

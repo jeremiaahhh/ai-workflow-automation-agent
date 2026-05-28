@@ -2,8 +2,8 @@
   {
     "stage": "completed",
     "payload": {
-      "title": "Research AI agent observability",
-      "goal": "Compile a short briefing on best practices for observing AI agent workflows in production, including timing data, tool-level logs, and reporting patterns.",
+      "title": "Research agent observability patterns",
+      "goal": "Compile a short briefing on best practices for observing agent workflows in production, including timing data, tool-level logs, and reporting patterns.",
       "context": "Internal write-up for the platform team. Audience already knows traditional service observability; focus on what changes for agentic systems."
     }
   },

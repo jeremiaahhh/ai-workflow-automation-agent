@@ -12,8 +12,8 @@ import { api, ApiRequestError } from "@/lib/api";
 
 const TEMPLATES: { title: string; goal: string }[] = [
   {
-    title: "Research AI agent observability",
-    goal: "Compile a short briefing on best practices for observing AI agent workflows in production, including timing data, tool-level logs, and reporting patterns.",
+    title: "Research agent observability patterns",
+    goal: "Compile a short briefing on best practices for observing agent workflows in production, including timing data, tool-level logs, and reporting patterns.",
   },
   {
     title: "Plan Postgres 16 migration",
@@ -96,7 +96,7 @@ export default function NewWorkflowPage() {
               </label>
               <Input
                 id="title"
-                placeholder="e.g. Research AI agent observability"
+                placeholder="e.g. Research agent observability patterns"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 maxLength={200}
