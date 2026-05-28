@@ -26,8 +26,8 @@ class MockWebSearchOutput(BaseModel):
 
 _CORPUS: list[tuple[str, str, str]] = [
     (
-        "State of AI agents in 2026",
-        "https://example.com/ai-agents-2026",
+        "State of AI agents in 2025",
+        "https://example.com/ai-agents-2025",
         "Tooling around agentic systems has matured around plan-then-execute patterns with explicit human approval gates.",
     ),
     (

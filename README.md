@@ -357,4 +357,4 @@ This is a portfolio-grade implementation, not a hardened product. Known gaps:
 
 ## License
 
-MIT — see [`LICENSE`](LICENSE).
+MIT — see [`LICENSE`](LICENSE). Built in 2025 as a portfolio project.
