@@ -17,6 +17,8 @@ next-env.d.ts
 .env.local
 *.local
 
+*.db
+*.sqlite
 postgres_data/
 
 .DS_Store
