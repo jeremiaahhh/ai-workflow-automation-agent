@@ -1,0 +1,26 @@
+[
+  {
+    "stage": "completed",
+    "payload": {
+      "title": "Research AI agent observability",
+      "goal": "Compile a short briefing on best practices for observing AI agent workflows in production, including timing data, tool-level logs, and reporting patterns.",
+      "context": "Internal write-up for the platform team. Audience already knows traditional service observability; focus on what changes for agentic systems."
+    }
+  },
+  {
+    "stage": "planned",
+    "payload": {
+      "title": "Draft incident post-mortem outline",
+      "goal": "Generate a post-mortem outline for yesterday's checkout outage covering timeline, contributing factors, customer impact, and three concrete follow-up actions.",
+      "context": "SEV-2 outage at 14:02–14:38 UTC affecting EU customers."
+    }
+  },
+  {
+    "stage": "draft",
+    "payload": {
+      "title": "Quarterly competitive intelligence sweep",
+      "goal": "Produce a competitive-landscape brief covering pricing, integrations, and recent product launches across the three closest competitors.",
+      "context": "Quarterly cycle. Output will feed into the executive readout next week."
+    }
+  }
+]
